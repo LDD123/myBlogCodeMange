@@ -9,7 +9,8 @@ description: 记录点滴
 author: 李德东
 language: zh-Hans
 email: 1135835030@qq.com
-timezone:
+timezone: 
+scheme: Pisces
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
