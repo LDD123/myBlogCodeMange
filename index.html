@@ -308,7 +308,7 @@
 </li>
 <li><p>jsp中页面从上到下执行。</p>
 </li>
-<li><p>js加载的顺序也就是页面中<script>标签出现的顺序。<script>标签里面的或者是引入的外部js文件的执行顺序都是其语句出现的顺序，其中js执行的过程也是页面装载的一部分。</p>
+<li><p>js加载的顺序也就是页面中script标签出现的顺序。script标签里面的或者是引入的外部js文件的执行顺序都是其语句出现的顺序，其中js执行的过程也是页面装载的一部分。</p>
 </li>
 <li><p>onload指示页面包含图片等文件在内的所有元素都加载完成。</p>
 </li>
@@ -316,7 +316,7 @@
 <hr>
 <p>   jquery的document.ready，或者简写的$(function)表示文档结构已经加载完成执行（不包含图片等非文字媒体文件）。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">&lt;html&gt;  </span><br><span class="line">&lt;head&gt;  </span><br><span class="line">&lt;%@ include file=&quot;/common/header.jsp&quot; %&gt;   </span><br><span class="line">&lt;%  </span><br><span class="line">    request.setAttribute(&quot;test1&quot;, &quot;222&quot;);   </span><br><span class="line">%&gt;  </span><br><span class="line">&lt;script&gt;  </span><br><span class="line">    //执行顺序4. 这个是整个页面加载完毕后再执行  </span><br><span class="line">    $(function()&#123;         </span><br><span class="line">        /**jsp表达式赋值**/  </span><br><span class="line">        alert(&quot;444&quot;+test1);               </span><br><span class="line">        alert(&quot;444&quot;+test2);  </span><br><span class="line">  </span><br><span class="line">    &#125;);  </span><br><span class="line">  </span><br><span class="line">    //在js里，执行顺序1，这块代码先执行  </span><br><span class="line">    var test1= &quot;&lt;%=request.getAttribute(&quot;test1&quot;)%&gt;&quot;;  </span><br><span class="line">    var test2= &quot;&lt;%=request.getAttribute(&quot;test2&quot;)%&gt;&quot;;  </span><br><span class="line">    alert(&quot;111&quot; + test1);  </span><br><span class="line">    alert(&quot;111&quot; + test2);  </span><br><span class="line">  </span><br><span class="line">&lt;%   </span><br><span class="line">    request.setAttribute(&quot;test2&quot;, &quot;333&quot;);  </span><br><span class="line">%&gt;  </span><br><span class="line">&lt;/script&gt;  </span><br><span class="line">&lt;/head&gt;  </span><br><span class="line">&lt;body&gt;  </span><br><span class="line">    &lt;!-- 执行顺序2 --&gt;  </span><br><span class="line">    &lt;p&gt;222&lt;/p&gt;  </span><br><span class="line">&lt;/body&gt;  </span><br><span class="line">&lt;script&gt;   </span><br><span class="line">    //执行顺序3  </span><br><span class="line">    alert(&quot;333&quot; + test1);  </span><br><span class="line">    alert(&quot;333&quot; + test2);  </span><br><span class="line">&lt;/script&gt;  </span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
-</script></p></li></ul>
+
           
         
       
@@ -491,6 +491,7 @@
 
 
     
+<<<<<<< HEAD
       
 
   
@@ -628,6 +629,8 @@
 
 
     
+=======
+>>>>>>> c34cae9b6916304839dbe35d2349a9eac380e7c2
   </section>
 
   
@@ -678,7 +681,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -686,6 +689,15 @@
 
             
 
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
             
 
           </nav>
