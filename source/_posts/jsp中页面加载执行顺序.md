@@ -1,7 +1,12 @@
 ---
 title: jsp中页面加载执行顺序
 date: 2018-02-23 17:16:26
-tags: jsp
+categories:
+- 前端
+- jsp
+tags: 
+- jsp 
+- java
 ---
 
 - java是在服务器端运行的代码，而javascript和html都是在浏览器端运行的代码。所以加载执行顺序是是java>js=html。
@@ -16,6 +21,7 @@ tags: jsp
 
    jquery的document.ready，或者简写的$(function)表示文档结构已经加载完成执行（不包含图片等非文字媒体文件）。
    
+<!--more-->
    
 ```
 <html>  
