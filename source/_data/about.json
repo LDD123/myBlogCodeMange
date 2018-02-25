@@ -1,0 +1,23 @@
+{
+    "avatar": "http://p4pm1p21u.bkt.clouddn.com/head.jpg",
+    "name": "李德东",
+	"tag": "Web前端/java/技术宅",
+    "desc": "不断的学习才能让你在激流中站稳",
+    "skills": {
+        "Javascript": 8,
+		"Python": 6,
+		"Node.js": 4
+    },
+    "projects": [{
+		"name": "你的项目A",
+		"image": "https://d13yacurqjgara.cloudfront.net/users/138819/screenshots/2578899/dribbble_800x600_01_1x.png",
+		"tags": ["2017年", "项目标签"],
+		"description": "你的项目A的简介",
+		"link_text": "网站链接",
+		"link": "https://dribbble.com/"
+	}],
+	"reward": [
+		"http://p4pm1p21u.bkt.clouddn.com/alipay.jpg",
+		"http://p4pm1p21u.bkt.clouddn.com/wechat.png"
+	]
+}

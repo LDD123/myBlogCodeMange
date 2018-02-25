@@ -1,0 +1,10 @@
+{
+    "social": {
+        "weibo": "http://weibo.com/6052473371",
+        "github": "https://github.com/LDD123/LDD123.github.io",
+		"rss": "/atom.xml"
+    },
+    "extern": {
+		"Github地址": "https://github.com/LDD123"
+    }
+}
