@@ -1,10 +1,10 @@
 ---
 title: Java sleep和wait方法的区别
 date: 2018-02-28 15:10:41
-tags:
 categories:
 - 后端
 - Java
+
 tags: 
 - java
 - sleep
