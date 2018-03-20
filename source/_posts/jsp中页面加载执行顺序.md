@@ -21,7 +21,7 @@ tags:
 
    jquery的document.ready，或者简写的$(function)表示文档结构已经加载完成执行（不包含图片等非文字媒体文件）。
    
-<!more-->
+<!--more-->
    
 ```
 <html>  
